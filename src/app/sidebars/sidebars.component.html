@@ -1,0 +1,29 @@
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+    <img src="/assets/AdoPetz IMG/icons/icon-option.png" alt="icon-das opcoes">
+  </a>
+  <!-- Menu off canvas no canto superior esquerdo, junto a barra de filtro -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Área do Tutor
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Opçoes do tutor
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" [routerLink]="['/dados']">Cadastrar Pet</a></li>
+          <li><a class="dropdown-item" [routerLink]="['/delete']">Excluir Pet</a></li>
+          <li><a class="dropdown-item" [routerLink]="['/update']">Editar Pet</a></li>
+        </ul>
+      </div>
+      <router-outlet></router-outlet>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  

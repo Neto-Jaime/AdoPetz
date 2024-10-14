@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Cadastro de Pet</h2>
+
+  <form (ngSubmit)="addNewAnimal()" #petForm="ngForm">
+    <div>
+      <label for="name">Nome:</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="pet.name"
+        name="name"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="age">Idade:</label>
+      <input type="number" id="age" [(ngModel)]="pet.age" name="age" required />
+    </div>
+
+    <div>
+      <label for="breed">Raça:</label>
+      <input
+        type="text"
+        id="breed"
+        [(ngModel)]="pet.breed"
+        name="breed"
+        required
+      />
+    </div>
+
+    <div>
+      <label for="type">Tipo:</label>
+      <input
+        type="species"
+        id="species"
+        [(ngModel)]="pet.species"
+        name="species"
+        required
+      />
+    </div>
+    <div>
+      <label for="type">Descrição:</label>
+      <input
+        type="text"
+        id="description"
+        [(ngModel)]="pet.description"
+        name="description"
+        required
+      />
+    </div>
+    <div>
+      <label for="petImage">Selecione a foto do pet:</label>
+      <input type="file" (change)="onFileSelected($event)">
+    </div>
+    <button type="submit" [disabled]="!petForm.valid">Cadastrar</button>
+  </form>
+  <p>{{ this.message }}</p>
+</div>

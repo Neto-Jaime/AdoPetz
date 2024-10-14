@@ -1,0 +1,22 @@
+<div class="pet-list">
+  <div class="pet-card" *ngFor="let pet of pets">
+    <!-- Verifica se pet.image existe, caso contrário usa uma imagem padrão// vou permanecer pois pretendo fazer a aplicação cadastar e fazer uploads de fotos do pet-->
+     <img [src]="'http://localhost:3000/uploads/' +pet.image" alt="{{ pet.name }}" class="pet-image">
+
+    
+   <!--  <img [src]="pet.image || '/assets/uploads/1.jpg'" alt="{{pet.name}}" class="pet-image"> -->
+    <img src="./assets/AdoPetz IMG/icons/icon-favorite.png" alt="icon-favorite" class="overlay-image">
+    <div class="pet-info">
+      <h5 class="card-title">{{ pet.name }}</h5>
+      <h5 class="card-title">{{ pet.image }}</h5>
+      <p class="card-text">Espécie: {{ pet.species }}</p>
+      <p class="card-text">Raça: {{ pet.breed }}</p>
+      <p class="card-text">Idade: {{ pet.age }} anos</p>
+      <p class="card-text">Adotado: {{ pet.adopted ? 'Sim' : 'Não' }}</p>
+      <p class="card-text">ID PET: {{ pet.animalId }}</p>
+      <button type="button" class="btn btn-warning">Adotar</button>
+    <!--   <pre>{{ pet | json }}</pre> -->
+
+    </div>
+  </div>
+</div>

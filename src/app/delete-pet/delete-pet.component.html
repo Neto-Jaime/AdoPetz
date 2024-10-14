@@ -1,0 +1,17 @@
+<div>
+    <h2>Excluir Pet</h2>
+    <!-- //Formulario apra exclusão do pet -->
+    <form (ngSubmit)="deletePet()">
+      <div>
+        <label for="animalId">ID do Animal:</label>
+        <input type="number" id="animalId" [(ngModel)]="animalId" name="animalId" required>
+      </div>
+      <div>
+        <label for="name">Nome do Animal:</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name" required>
+      </div>
+      <button type="submit">Excluir Pet</button>
+    </form>
+    <p *ngIf="successMessage">{{ successMessage }}</p>
+  </div>
+  

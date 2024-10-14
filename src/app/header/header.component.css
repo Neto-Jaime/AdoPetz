@@ -1,0 +1,96 @@
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #63C1A3;
+    padding: 10px 50px;
+    width: 100%;
+    flex-wrap: wrap; 
+}
+
+/* Container do logo e menu */
+.div-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Logo */
+.logo img {
+    width: 150px; 
+    height: 190px; 
+}
+
+header .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Menu de navegação */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Botão de Login */
+header .btn-login {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .div-header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    header .btn-login {
+        margin-top: 10px;
+        width: 100%; 
+        justify-content: center;
+    }
+}

@@ -1,0 +1,56 @@
+.filter-options input, .filter-options select, .filter-options .btn-search, .btn-warning {
+   /*  padding: 10px; */
+    font-size: 14px;
+    border-radius: 5px;
+    
+    /* width:  200px;
+    height: 50px;
+    margin-top: 1pt; */
+    border: 1px solid #47f1a2 !important;
+   
+}
+
+.btn-warning{
+    width:  20px;
+}
+
+/* Filtro de Pets */
+.search-filter {
+    text-align: center;
+    justify-content: space-around;
+    background-color: #63C1A3;
+    flex-wrap: wrap;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-filter h2 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+/* Filter options container */
+.filter-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+}
+
+/* Estilos para input, select e botões */
+.filter-options input, 
+.filter-options select, 
+.filter-options .btn-search, 
+.btn-warning {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #47f1a2 !important;
+    width: 200px;
+}
+

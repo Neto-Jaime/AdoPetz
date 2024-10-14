@@ -1,0 +1,35 @@
+
+<div class="container">
+    <h2>Atualizar Pet</h2>
+   <!--  Chamada de metodo update pet e preenchimentod e formulario -->
+    <form (ngSubmit)="updatePet()">
+      <div>
+        <label for="animalId">ID do Animal:</label>
+        <input type="number" id="animalId" [(ngModel)]="animalId" name="animalId" required />
+      </div>
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name" />
+      </div>
+      <div>
+        <label for="species">Espécie:</label>
+        <input type="text" id="species" [(ngModel)]="species" name="species" />
+      </div>
+      <div>
+        <label for="breed">Raça:</label>
+        <input type="text" id="breed" [(ngModel)]="breed" name="breed" />
+      </div>
+      <div>
+        <label for="age">Idade:</label>
+        <input type="number" id="age" [(ngModel)]="age" name="age" />
+      </div>
+      <div>
+        <label for="description">Descrição:</label>
+        <textarea id="description" [(ngModel)]="description" name="description"></textarea>
+      </div>
+      <button type="submit">Atualizar Pet</button>
+      <!-- Menssagem para o ususrio relacionado a atualização -->
+      <p *ngIf="successMessage" class="success">{{ successMessage }}</p>
+    </form>
+  </div>
+  

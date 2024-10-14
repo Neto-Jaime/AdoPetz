@@ -1,0 +1,9 @@
+#carossel-pequeno{
+    max-width: 300px;
+    margin: auto;
+}
+
+.foto_carrossel{
+    width: 100%;
+    height: auto;
+}

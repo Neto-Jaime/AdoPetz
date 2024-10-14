@@ -1,0 +1,35 @@
+/* Rodapé */
+footer {
+    background-color: #63C1A3;
+    color: rgb(0, 0, 0);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .newsletter {
+    margin-bottom: 20px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #FFB347;
+    /* border-color: #FFB347; */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+footer .btn-newsletter {
+    background-color: #FFB347;
+    padding: 10px 20px;
+    border: 1px solid #e68c0e;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+footer .social a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin: 0 10px;
+}
